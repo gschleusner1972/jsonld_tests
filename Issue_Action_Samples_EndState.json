@@ -19,11 +19,13 @@
     "Pr:ProjectNumber": ".../project/#234234243.00",
   },
 
-  "Ac:ActionsFrom": {
+  "Pr:ItemLinks": {
     "Pr:FromMeeting":".../timeline/meeting/The coordination meeting x",
     "Pr:ForRelatedMilestone": ".../timeline/milestone/60% Desisng Development",
     "Pr:ItemHistory": {
-      "PR:ItemHisotryRecord": [{"BCF:id":"/145234lh234lqhwlhq.bcf"},{"BCF:issueID": "/145234lh234lqhwlhq.bcf"}]
+      "PR:ItemHisotryRecord": [
+        {"BCF:id":"/145234lh234lqhwlhq.bcf"},
+        {"BCF:issueID": "/145234lh234lqhwlhq.bcf"}]
     
     }
 
@@ -36,8 +38,8 @@
     "ac:actionDescription": "These are issues from beams and ducts",
     "ac:actionType": "ac:Action",
     "ac:actionAssignedTo" : {
-		  "ac:actionAssgnedToPeople": ["Greg","Steve"],
-	  	"ac:actionAssignedToCompany": ["MEP Company", "Structural Company"]
+		  "ac:actionAssgnedToPeople": ["/project/company/companyname/greg.schleusner@mail.com","/project/company/companyname/steve.stephens@mail.com"],
+	  	"ac:actionAssignedToCompany": ["/project/company/MEP Company", "/project/company/Structural Company"]
 	    },
 	
 	  "ac:actionDueDate": "20201230",
