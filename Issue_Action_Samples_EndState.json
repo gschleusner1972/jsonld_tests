@@ -12,6 +12,17 @@
   }
     
   },
+  "Pr:ProjectInfo": {
+    "Pr:ProjectName":".../project/This Projects Name",
+    "Pr:ProjectNumber": ".../project/#234234243",
+  },
+
+  "Ac:ActionsFrom": {
+    "Pr:FromMeeting":".../timeline/meeting/The coordination meeting x",
+    "Pr:ForRelatedMilestone": ".../timeline/milestone/60% Desisng Development",
+
+  },
+
   "Ac:Actions": [
     {
     "ac:actionID": "2345230452304582340582645",
