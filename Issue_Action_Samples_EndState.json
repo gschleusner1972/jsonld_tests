@@ -7,13 +7,12 @@
     "ClAc": "/project/actions/clash",
     "Is": "/project/action/issues",
     "BCF": "/project/action/bcf",
-    "El": "/project/model/elements",
-    "Ac:Action": {
-      "@id": "/#actions",
-      "@type": "xsd:string"
-  }
-    
+    "El": "/project/model/elements"
+
   },
+  
+    
+  
   "Pr:ProjectInfo": {
     "Pr:ProjectName":".../project/This Projects Name",
     "Pr:ProjectNumber": ".../project/#234234243.00"
@@ -25,7 +24,9 @@
     "Pr:ItemHistory": {
       "PR:ItemHisotryRecord":  [
         {"BCF:id":"/145234lh234lqhwlhq.bcf"},
-        {"BCF:issueID": "/145234lh234lqhwlhq.bcf"}]
+        {"BCF:issueID": "/145234lh234lqhwlhq.bcf"},
+        {"Is:IssueGroup": "/IssueGroup1231231.json"}
+      ]
     
     }
 
@@ -42,15 +43,15 @@
 	  	"ac:actionAssignedToCompany": ["/project/company/consultants.json/MEP Company", "/project/company/consultants.json/Structural Company"]
 	    },
 	
-	  "ac:actionDueDate": "20201230",
+	  "Ac:actionDueDate": "20201230",
 	  "ClAc:clashgroupingsByCollection": {
 		  "ClAc:clashgroupone": [
-			  "El:beam/123132123",
-			  "El:beam/1231345345"
+			  "El:/elements/beam.json/123132123",
+			  "El:/elements/beam.json/1231345345"
         ],
 		  "ClAc:clashgroupTwo": [
-			"El:duct/123132123",
-			"El:duct/1231345345"
+			"El:/elements/duct.json/123132123",
+			"El:/elements/duct.json/1231345345"
       ]
       },
 		
@@ -58,8 +59,35 @@
 		  "ClAc:clashgroupBeamVsColumn": ["1234124","2345234"],
       "ClAc:clashgrouptwo": ["654654","654654"]
     	}
-    }
+    },
   
+    {
+      "ac:actionID": "23452304523045823405823425",
+      "ac:actionName": "This is the second isuse",
+      "ac:actionDescription": "These are issues columns and doors",
+      "ac:actionType": "Clash",
+      "ac:actionAssignedTo" : {
+        "ac:actionAssgnedToPeople": ["/project/company/Arch Company/greg.schleusner@mail.com.json","/project/company/Structural Company/steve.stephens@mail.com.json"],
+        "ac:actionAssignedToCompany": ["/project/company/consultants.json/Arch Company", "/project/company/consultants.json/Structural Company"]
+        },
+    
+      "Ac:actionDueDate": "20201230",
+      "ClAc:clashgroupingsByCollection": {
+        "ClAc:clashgroupone": [
+          "El:/elements/door.json/123132123",
+          "El:/elements/door.json/1231345345"
+          ],
+        "ClAc:clashgroupTwo": [
+        "El:/elements/column.json/123132123",
+        "El:/elements/column.json/1231345345"
+        ]
+        },
+      
+      "ClAc:clashgroupingsByElementGroups": {
+        "ClAc:clashgroupBeamVsColumn": ["1234124","2345234"],
+        "ClAc:clashgrouptwo": ["654654","654654"]
+        }
+      }
   
     ]
     
