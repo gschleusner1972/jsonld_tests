@@ -7,15 +7,27 @@
     "ClAc": "/project/actions/clash",
     "Is": "/project/action/issues",
     "BCF": "/project/action/bcf",
-    "El": "/project/model/elements"
+    "El": "/project/model/elements",
+    
+    "Pr:ItemHisotryRecord": {
+      "@container": "@list",
+      "@Type": "Item History"
+    }
 
   },
   
-    
   
+  "@type":"ProjectInfo",
   "Pr:ProjectInfo": {
     "Pr:ProjectName":".../project/This Projects Name",
     "Pr:ProjectNumber": ".../project/#234234243.00"
+  },
+
+  "PR:ProjectItemDetails": {
+    "Pr:ItemType": "Action",
+    "Pr:ItemCreationDate": "20201230"
+
+
   },
 
   "Pr:ItemLinks": {
@@ -23,8 +35,8 @@
     "Pr:ForRelatedMilestone": ".../timeline/milestone/60% Desisng Development",
     "Pr:ItemHistory": {
       "PR:ItemHisotryRecord":  [
-        {"BCF:id":"/145234lh234lqhwlhq.bcf"},
-        {"BCF:issueID": "/145234lh234lqhwlhq.bcf"},
+        {"BCF:Name":"/BCF Name Here.bcf"},
+        {"BCF:issueID": "/BCF Name Here.bcf/234234523452345"},
         {"Is:IssueGroup": "/IssueGroup1231231.json"}
       ]
     
